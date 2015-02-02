@@ -1,0 +1,5 @@
+:set -isrc -itest
+:set -Wall
+:def test \_ -> return $ "Test.DocTest.doctest [\"src/Tutorial.hs\"]"
+:def testFunnyMath \_ -> return $ "Test.DocTest.doctest [\"src/FunnyMath.hs\"]"
+:def testMain \_ -> return $ "Test.DocTest.doctest [\"src/Main.hs\"]"

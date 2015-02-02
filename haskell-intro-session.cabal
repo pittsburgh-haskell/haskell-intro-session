@@ -1,0 +1,57 @@
+name:                haskell-intro-session
+version:             0.1.0.0
+synopsis:            Pittsburgh Haskell intro session
+description:         Pittsburgh Haskell intro session slides and tutorial code
+homepage:            https://github.com/pittsburgh-haskell/haskell-intro-session
+license:             BSD3
+license-file:        LICENSE
+author:              Franklin Chen
+maintainer:          franklinchen@franklinchen.com
+copyright:           Franklin Chen
+category:            Game
+build-type:          Simple
+extra-source-files:  README.md
+                   , slides
+cabal-version:       >=1.10
+
+executable game
+  default-language:  Haskell2010
+  ghc-options:       -Wall
+  hs-source-dirs:    src
+  main-is:           Main.hs
+  build-depends:     base
+                   , random
+
+library
+  default-language:  Haskell2010
+  ghc-options:       -Wall
+  hs-source-dirs:    src
+  exposed-modules:   Tutorial
+                   , FunnyMath
+                   , Main
+  build-depends:     base
+                   , random
+
+test-suite doctest
+  type:              exitcode-stdio-1.0
+  default-language:  Haskell2010
+  ghc-options:       -threaded -Wall
+  hs-source-dirs:    test
+  main-is:           doctests.hs
+  build-depends:     base
+                   , doctest
+                   , random
+
+test-suite spec
+  type:              exitcode-stdio-1.0
+  default-language:  Haskell2010
+  ghc-options:       -Wall
+  hs-source-dirs:    test
+  main-is:           Spec.hs
+  build-depends:     base
+                   , hspec
+                   , haskell-intro-session
+
+source-repository head
+  type:              git
+  location:          https://github.com/pittsburgh-haskell/haskell-intro-session
