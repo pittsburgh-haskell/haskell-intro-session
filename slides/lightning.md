@@ -1,8 +1,8 @@
 % [Haskell](http://haskell.org/) for everyone! \
-  (part 1: lightning talk)
-% [Franklin Chen](http://FranklinChen.com/) ([`@FranklinChen`](http://twitter.com/FranklinChen)) \
-  [Pittsburgh Haskell](http://PittsburghHaskell.org/) ([`@PghHaskell`](http://twitter.com/PghHaskell)) \
-  [Code and Supply](http://CodeAndSupply.co/) ([`@CodeAndSupply`](http://twitter.com/CodeAndSupply))
+  (at [Code and Supply](http://CodeAndSupply.co/))
+% [Franklin Chen](http://FranklinChen.com/) / \
+  [Pittsburgh Haskell](http://PittsburghHaskell.org/) \
+
 % February 2, 2015
 
 # Outline
