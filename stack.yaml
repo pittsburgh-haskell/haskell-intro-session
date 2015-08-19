@@ -1,0 +1,6 @@
+flags:
+  haskell-intro-session: {}
+packages:
+- '.'
+extra-deps: []
+resolver: lts-3.1
